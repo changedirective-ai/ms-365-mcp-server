@@ -6,7 +6,6 @@ COPY package*.json ./
 RUN npm i
 
 COPY . .
-RUN npm run generate
 RUN npm run build
 
 FROM node:20-alpine AS release
